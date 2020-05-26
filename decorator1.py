@@ -17,6 +17,9 @@ def timer(num = 10):
 
 @timer(num = 150)
 def square(n):
+    """
+        Функция прсото считает сумму квадратов в заданном диапозоне
+    """
     sum = 0
     for i in range(n):
         sum += i ** 2

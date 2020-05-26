@@ -2,6 +2,11 @@
 import time
 
 class Decorator():
+    """
+        Класс используется как декоратор
+
+        count - кол-во испытаний для определения среднего времени работы алоритма
+    """
     def __init__(self, count):
         self.count = count
 
@@ -19,6 +24,9 @@ class Decorator():
 
 @Decorator(count = 100)
 def square(n):
+    """
+        Функция прсото считает сумму квадратов в заданном диапозоне
+    """
     sum = 0
     for i in range(n):
         sum += i ** 2
